@@ -31,6 +31,77 @@ Arrow function with single parameter does not require close bracket() around par
 //arrow function with single arguement
 let checkWeight= (weight) => weight;
 console.log(checkWeight(58));  
+
+//arrow function with double arguement
+ 
+let number = (no1,no2) => no1 + no2;
+console.log(number(12,22));
+
+//another short form if function has one argument
+
+let result = n => n * 5;
+console.log( result (2));
+
+//if there is no arguement
+
+let myname = () => console.log("joy");
+myname();
+
+//eg
+
+greet = () => {
+    console.log("Its a good day")
+}
+
+greet();
+
+
+//eg function
+
+function greetUser() {               // greetuser- function name
+         
+         let name = "joy";
+         let msg = "Hello" + name + "I'm learning javascript!";                            // inside parenthses statement
+        console.log(msg)
+}
+
+greetUser()                                                                                 // calling function
+
+
+//eg using parameters and arguements
+
+function greetuser(name) {                              // name- parameter
+              let msg = "Hello" + name;  
+              console.log(msg);                                 
+
+}
+
+greetuser("joy")                                       // arguement
+
+
+//eg using two parameters and two arguements
+
+function price(firstno, secondno) {
+    let result = firstno * secondno
+    console.log(result);
+}
+
+price(2, 200);
+
+/* eg arrow function syntax
+
+const functionA = (param1, param2, param3) => {
+
+}
+
+*/
+
+const msg = (hello) => {                       // does not require function keyword and use => to seperate
+                                                 // parameter from body
+    console.log( `joy : ${hello}`);      
+};
+
+msg('hii');
         
 
 //arrow function with double arguement
