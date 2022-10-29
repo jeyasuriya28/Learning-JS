@@ -126,3 +126,80 @@ greet = () => {
 }
 
 greet();
+
+//eg function
+
+function greetUser() {               // greetuser- function name
+         
+         let name = "joy";
+         let msg = "Hello" + name + "I'm learning javascript!";                            // inside parenthses statement
+        console.log(msg)
+}
+
+greetUser()                                                                                 // calling function
+
+
+//eg using parameters and arguements
+
+function greetuser(name) {                              // name- parameter
+              let msg = "Hello" + name;  
+              console.log(msg);                                 
+
+}
+
+greetuser("joy")                                       // arguement
+
+
+//eg using two parameters and two arguements
+
+function price(firstno, secondno) {
+    let result = firstno * secondno
+    console.log(result);
+}
+
+price(2, 200);
+
+/* eg arrow function syntax
+
+const functionA = (param1, param2, param3) => {
+
+}
+
+*/
+
+const msg = (hello) => {                       // does not require function keyword and use => to seperate
+                                                 // parameter from body
+    console.log( `joy : ${hello}`);      
+};
+
+msg('hii');
+
+function greeting(name) {
+console.log('hii' + name + 'you are amazing');
+}
+greeting('joy');
+
+// default parameter is used whenever ther is no value to assigned to arguemnt or arguement value is undefined
+
+function drinks (morning = 'coolsberg', afternoon = 'orange juice' , night = 'carrot juice') {
+    console.log(`Morning I Drink ${morning}`)
+    console.log(`afternoon I drink  ${afternoon}`)
+    console.log(`night i drink ${night}`)
+}
+
+drinks();
+
+//helper function function inside a function 
+
+function monitorCount (rows, columns) {
+    return rows * columns
+}
+
+function CostOfmonitor (rows, colunms) {
+    return monitorCount(rows * colunms) + 20
+}
+
+const totalCost = CostOfmonitor (5,4) + 20
+console.log(totalCost);
+
+
